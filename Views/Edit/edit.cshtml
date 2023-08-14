@@ -1,0 +1,183 @@
+﻿@model scope_project_2.Models.edit;
+@{
+    Layout = "student_db";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid py-3">
+        <center> <h2 class="mb-4">EDIT YOUR DETAILS</h2></center>
+        <form asp-action="edit" enctype="multipart/form-data" method="post">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="mb-3">
+                        <label asp-for="F_N" class="form-label">First Name:</label>
+                        <input asp-for="F_N" class="form-control" />
+                        <span asp-validation-for="F_N" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="L_N" class="form-label">Last Name:</label>
+                        <input asp-for="L_N" class="form-control" />
+                        <span asp-validation-for="L_N" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="gender" class="form-label">Gender:</label>
+                        <input asp-for="gender" class="form-control" />
+                        <span asp-validation-for="gender" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="mb-3">
+                        <label asp-for="DOB" class="form-label">Date Of Birth:</label>
+                        <input asp-for="DOB" type="date" class="form-control" />
+                        <span asp-validation-for="DOB" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Email:</label>
+                        <input asp-for="Email" type="email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Phone" class="form-label">Phone:</label>
+                        <input asp-for="Phone" type="number" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="mb-3">
+                        <label asp-for="Country" class="form-label">Country:</label>
+                        <select asp-for="Country" class="form-select"></select>
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="State" class="form-label">State:</label>
+                        <select asp-for="State" class="form-select"></select>
+                        <span asp-validation-for="State" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="city" class="form-label">city:</label>
+                        <select asp-for="city" class="form-select"></select>
+                        <span asp-validation-for="city" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="mb-3">
+                        <label>Hobbies:</label>
+                        <div class="form-check">
+                            <input asp-for="Read" type="checkbox" class="form-check-input" />
+                            <label asp-for="Read" class="form-check-label">Reading</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Play" type="checkbox" class="form-check-input" />
+                            <label asp-for="Play" class="form-check-label">Playing</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Cook" type="checkbox" class="form-check-input" />
+                            <label asp-for="Cook" class="form-check-label">Cooking</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-success">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Countries
+            var country_arr = ["Select Country", "AUSTRALIA", "INDIA", "NEW ZEALAND", "USA", "UAE"];
+
+            $.each(country_arr, function (i, item) {
+                $('#Country').append($('<option>', {
+                    value: item,
+                    text: item,
+                }));
+            });
+
+            // States
+            var s_a = [];
+            s_a["Select Country"] = ["Select State"];
+            s_a["AUSTRALIA"] = ["Select State", "QUEENSLAND", "VICTORIA"];
+            s_a["INDIA"] = ["Select State", "ANDHRAPRADESH", "KARNATAKA", "TAMILNADU", "DELHI", "GOA", "W-BENGAL", "GUJARAT", "MADHYAPRADESH", "MAHARASHTRA", "RAJASTHAN"];
+            s_a["NEW ZEALAND"] = ["Select State", "AUCKLAND"];
+            s_a["USA"] = ["Select State", "NEWJERSEY", "ILLINOIS"];
+            s_a["UAE"] = ["Select State", "DUBAI"];
+
+            // Cities
+            var c_a = [];
+            c_a["QUEENSLAND"] = ["BRISBANE"];
+            c_a["VICTORIA"] = ["MELBOURNE"];
+            c_a["ANDHRAPRADESH"] = ["HYDERABAD"];
+            c_a["KARNATAKA"] = ["BANGLORE"];
+            c_a["TAMILNADU"] = ["CHENNAI"];
+            c_a["DELHI"] = ["DELHI"];
+            c_a["GOA"] = ["GOA"];
+            c_a["W-BENGAL"] = ["KOLKATA"];
+            c_a["GUJARAT"] = ["AHMEDABAD1", "AHMEDABAD2", "AHMEDABAD3", "BARODA", "BHAVNAGAR", "MEHSANA", "RAJKOT", "SURAT", "UNA"];
+            c_a["MADHYAPRADESH"] = ["INDORE"];
+            c_a["MAHARASHTRA"] = ["MUMBAI", "PUNE"];
+            c_a["RAJASTHAN"] = ["ABU"];
+            c_a["AUCKLAND"] = ["AUCKLAND"];
+            c_a["NEWJERSEY"] = ["EDISON"];
+            c_a["ILLINOIS"] = ["CHICAGO"];
+            c_a["DUBAI"] = ["DUBAI"];
+
+            $('#Country').change(function () {
+                var country = $(this).val();
+                var state_arr = s_a[country];
+
+                $('#State').empty();
+                $('#city').empty();
+
+                if (country === "Select Country") {
+                    $('#State').append($('<option>', {
+                        value: "Select State",
+                        text: "Select State",
+                    }));
+                    $('#city').append($('<option>', {
+                        value: "Select city",
+                        text: "Select city",
+                    }));
+                } else {
+                    $.each(state_arr, function (i, item_state) {
+                        $('#State').append($('<option>', {
+                            value: item_state,
+                            text: item_state,
+                        }));
+                    });
+                }
+            });
+
+            $('#State').change(function () {
+                var state = $(this).val();
+                var city_arr = c_a[state];
+
+                $('#city').empty();
+
+                if (state === "Select State") {
+                    $('#city').append($('<option>', {
+                        value: "Select city",
+                        text: "Select city",
+                    }));
+                } else {
+                    $.each(city_arr, function (i, item_city) {
+                        $('#city').append($('<option>', {
+                            value: item_city,
+                            text: item_city,
+                        }));
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "_Layout2";
+}
+@model scope_project_2.Models.student_dashboard_0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form asp-action="student_dashboard_0" method="post">
+        <!-- Email field -->
+        <div class="form-group">
+            <label asp-for="email" class="control-label">Email:</label>
+            <input asp-for="email" type="email" class="form-control" />
+            <span asp-validation-for="email" class="text-danger"></span>
+        </div>
+
+        <!-- Password field -->
+        <div class="form-group">
+            <label asp-for="pass" class="control-label">Password:</label>
+            <input asp-for="pass" type="password" class="form-control" />
+            <span asp-validation-for="pass" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-outline-success mt-2">Login</button>
+    </form>
+
+</body>
+</html>

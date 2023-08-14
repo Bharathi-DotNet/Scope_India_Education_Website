@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "_Layout2";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="my-4 text-center">Student Details</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="bg-success text-black">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Country</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Hobbies</th>
+                        <td>Options</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (string[] student in ViewBag.array)
+                    {
+                        <tr>
+                            <td>@student[0]</td>
+                            <td>@student[1]</td>
+                            <td>@student[2]</td>
+                            <td>@student[3]</td>
+                            <td>@student[4]</td>
+                            <td>@student[5]</td>
+                            <td>@student[6]</td>
+                            <td>@student[7]</td>
+                            <td>@student[8]</td>
+                           @*<td>@student[9]</td>*@
+                            <img src="@Url.Content("~/images/images.jpg")" alt="images.jpg" class="img-thumbnail">
+                            <td> <a href="\Edit\edit">Edit</a></td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

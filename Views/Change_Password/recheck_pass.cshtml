@@ -1,0 +1,38 @@
+﻿@model scope_project_2.Models.recheck_pass
+
+@{
+    ViewData["Title"] = "recheck_pass";
+    Layout = "student_db";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-8">
+                <form asp-action="recheck_pass">
+                    <div class="form-group">
+                        <label asp-for="Old_pass" class="control-label">Enter Your Old Password :</label>
+                        <input asp-for="Old_pass" class="form-control" />
+                        <span asp-validation-for="Old_pass" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="confirm_pass" class="control-label">Enter Confirm Password :</label>
+                        <input asp-for="confirm_pass" class="form-control" />
+                        <span asp-validation-for="confirm_pass" class="text-danger"></span>
+                    </div>
+                    <center> <button class="btn btn-outline-info mt-3">Submit</button></center>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

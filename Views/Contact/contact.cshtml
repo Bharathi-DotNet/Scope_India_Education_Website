@@ -1,0 +1,56 @@
+﻿@model scope_project_2.Models.Contact
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/ProCss.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="container mt-5  align-content-center">
+        <div class="row ms-4 justify-content-center">
+            <center>  <h4 class="ms-5">Contact</h4></center>
+
+            <div class="col-6 ">
+                <form asp-action="contact">
+
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Subject" class="control-label"></label>
+                        <input asp-for="Subject" class="form-control" />
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Message" class="control-label"></label>
+                        <input asp-for="Message" class="form-control" />
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+                    <center>
+                        <div class=" form-group">
+                            <button class="btn mt-3  btn-outline-success text-white">Submit</button>
+                        </div>
+                    </center>
+                    
+                </form>
+            </div> 
+        </div>
+        <center>
+          
+       
+    </div>
+</body>
+</html>

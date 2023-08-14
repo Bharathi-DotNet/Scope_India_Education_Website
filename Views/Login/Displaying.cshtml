@@ -1,0 +1,81 @@
+﻿@model scope_project_2.Models.login
+@{
+    Layout = "student_db";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/ProCss.css" asp-append-version="true" />
+    <style>
+     th,td{
+            color: white !important; /* Set the text color to white for all elements inside the table */
+           
+     }
+       
+
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="my-4 text-center">Student Details</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="bg-success text-black">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Gender</th>
+                                <th>Date of Birth</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Country</th>
+                                <th>State</th>
+                                <th>City</th>
+                                <th>Hobbies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (string[] student in ViewBag.arr)
+                            {
+                                <tr>
+
+                                    <td>@student[0]</td>
+                                    <td>@student[1]</td>
+                                    <td>@student[2]</td>
+                                    <td>@student[3]</td>
+                                    <td>@student[4]</td>
+                                    <td>@student[5]</td>
+                                    <td>@student[6]</td>
+                                    <td>@student[7]</td>
+                                    <td>@student[8]</td>
+                                    <td>@student[9]</td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-2">
+                @foreach (string[] student in ViewBag.arr)
+                {
+                    <img src="~/images/@student[10]" alt="Student Image" class="img img-thumbnail figure-img img-fluid align-items-stretch">
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+body {
+    background: linear-gradient(to left, rgb(1, 32, 1), rgb(13, 141, 13));
+    font-family: 'Noto Serif', serif;
+}
+
+label, h2,div{
+    color: white;
+}
+a {
+    text-decoration: none !important;
+}

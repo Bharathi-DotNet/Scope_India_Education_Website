@@ -1,0 +1,181 @@
+﻿@model scope_project_2.Models.registriation
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/ProCss.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container py-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <center>
+                    <h2 class="mb-4">Sign Up</h2>
+                </center>
+                <form asp-action="registration" enctype="multipart/form-data" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="F_N" class="form-label">First Name:</label>
+                                <input asp-for="F_N" class="form-control" />
+                                <span asp-validation-for="F_N" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="L_N" class="form-label">Last Name:</label>
+                                <input asp-for="L_N" class="form-control" />
+                                <span asp-validation-for="L_N" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gender:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" asp-for="gender" type="radio" value="Male" />
+                                    <label class="form-check-label" asp-for="gender">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" asp-for="gender" type="radio" value="Female" />
+                                    <label class="form-check-label" asp-for="gender">Female</label>
+                                </div>
+                                <span asp-validation-for="gender" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="DOB" class="form-label">Date Of Birth:</label>
+                                <input asp-for="DOB" type="date" value="Female" class="form-control" />
+                                <span asp-validation-for="DOB" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Email" class="form-label">Email:</label>
+                                <input asp-for="Email" type="email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Phone" class="form-label">Phone:</label>
+                                <input asp-for="Phone" type="number" class="form-control" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Country" class="form-label">Country:</label>
+                                <select asp-for="Country" class="form-select" id="Country"></select>
+                                <span asp-validation-for="Country" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="State" class="form-label">State:</label>
+                                <select asp-for="State" class="form-select" id="State"></select>
+                                <span asp-validation-for="State" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="City" class="form-label">City:</label>
+                                <select asp-for="City" class="form-select" id="City"></select>
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Hobbies:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" asp-for="Read" />
+                                    <label class="form-check-label" asp-for="Read">Reading</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" asp-for="Play" />
+                                    <label class="form-check-label" asp-for="Play">Playing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" asp-for="Cook" />
+                                    <label class="form-check-label" asp-for="Cook">Cooking</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label" asp-for="imag">Image :</label>
+                                <input asp-for="imag" type="file" class="form-control" multiple />
+                                <span asp-validation-for="imag" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Add the JavaScript code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Countries
+            var Country_arr = ["Select Country", "AUSTRALIA", "INDIA", "NEW ZEALAND", "USA", "UAE"];
+
+            $.each(Country_arr, function (i, item) {
+                $('#Country').append($('<option>', {
+                    value: item,
+                    text: item
+                }));
+            });
+
+            // States and Cities
+            var stateCityMap = {
+                "AUSTRALIA": "QUEENSLAND|MELBOURNE",
+                "INDIA": "ANDHRAPRADESH|KARNATAKA|TAMILNADU|DELHI|GOA|W-BENGAL|GUJARAT|MADHYAPRADESH|MAHARASHTRA|RAJASTHAN",
+                "NEW ZEALAND": "AUCKLAND",
+                "USA": "NEWJERSEY|ILLINOIS",
+                "UAE": "DUBAI"
+            };
+
+            $('#Country').change(function () {
+                var selectedCountry = $(this).val();
+                var stateArr = stateCityMap[selectedCountry].split("|");
+
+                $('#State').empty().append($('<option>', {
+                    value: 'Select State',
+                    text: 'Select State'
+                }));
+
+                $.each(stateArr, function (index, state) {
+                    $('#State').append($('<option>', {
+                        value: state,
+                        text: state
+                    }));
+                });
+
+                // Clear city dropdown
+                $('#City').empty().append($('<option>', {
+                    value: 'Select City',
+                    text: 'Select City'
+                }));
+            });
+
+            $('#State').change(function () {
+                var selectedState = $(this).val();
+                var cityArr = stateCityMap[$('#Country').val()].split("|");
+                var cities = cityArr.filter(function (item) {
+                    return item.startsWith(selectedState);
+                });
+
+                $('#City').empty().append($('<option>', {
+                    value: 'Select City',
+                    text: 'Select City'
+                }));
+
+                $.each(cities, function (index, city) {
+                    $('#City').append($('<option>', {
+                        value: city,
+                        text: city
+                    }));
+                });
+            });
+        });
+    </script>
+</body>
+</html>

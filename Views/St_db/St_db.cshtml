@@ -1,0 +1,38 @@
+﻿@model scope_project_2.Models.Forgot;
+@{
+    Layout = "student_db";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Edit</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css" integrity="sha512-Lb4yqCk54g4Q9bXeg7lgCqRIBiKUP0R+1GxP+HYabEuxG5/jg2U1oEh9Eq2psHJ8NGmO+1OQ9sDKWm9IKmoDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Profile Edit</h2>
+                        <form asp-action="St_db1" method="post">
+                            <div class="mb-3">
+                                <label for="ema" class="form-label">Email:</label>
+                                <input type="email" asp-for="ema" class="form-control" id="ema" />
+                                <span asp-validation-for="ema" class="text-danger"></span>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-outline-success">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>+
+            </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS and Popper.js (needed for Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-j00dIvxtirUk5pF4e2VcVsw7TrlUXb4R2ExvEsy2ADAAcP+jXXZFXeb8mP2AafSz9aZwIin7fEs1vLb8n54Bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.min.js" integrity="sha512-D4b9f8JmxjwnO38N6lh/HhT+YdpzqyR/tV6yz+nbC/MzEXrFrzskw+4GJtiq5PiwlsHHws/jIa1MLhlDvekyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

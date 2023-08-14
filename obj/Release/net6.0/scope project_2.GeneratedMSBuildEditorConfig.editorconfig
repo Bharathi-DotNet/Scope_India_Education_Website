@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = scope_project_2
+build_property.RootNamespace = scope_project_2
+build_property.ProjectDir = C:\Users\user\Desktop\Final_Scope_Project\scope project_2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Final_Scope_Project\scope project_2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/About_Us/about_us.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRfVXNcYWJvdXRfdXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Change_Password/ch_pass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbmdlX1Bhc3N3b3JkXGNoX3Bhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Change_Password/recheck_pass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbmdlX1Bhc3N3b3JkXHJlY2hlY2tfcGFzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Change_Password/sucess1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbmdlX1Bhc3N3b3JkXHN1Y2VzczEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Contact/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Contact/error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxlcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Contact/sucess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxzdWNlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Edit/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFxlZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Edit/Edit_Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFxFZGl0X1N1Y2Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/course_selected.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cY291cnNlX3NlbGVjdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/Displaying.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGlzcGxheWluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cZXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cZm9yZ290LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/Search_For_Course.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2VhcmNoX0Zvcl9Db3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/sucess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cc3VjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Login/_login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cX2xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Registration/error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXGVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Registration/error1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXGVycm9yMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Registration/registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXHJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Registration/sucess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXHN1Y2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Shared/student_db.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXHN0dWRlbnRfZGIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Student_Dashboard_0/student_dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudF9EYXNoYm9hcmRfMFxzdHVkZW50X2Rhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Student_Dashboard_0/student_dashboard_0.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudF9EYXNoYm9hcmRfMFxzdHVkZW50X2Rhc2hib2FyZF8wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/St_db/St_db.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RfZGJcU3RfZGIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/St_db/St_db1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RfZGJcU3RfZGIxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/welcome/home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncd2VsY29tZVxob21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Final_Scope_Project/scope project_2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-et972iidz2
